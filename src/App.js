@@ -5,6 +5,7 @@ import { ThemeContext } from './contexts/ThemeContext';
 import { Main, BlogPage, ProjectPage } from './pages'
 import { BackToTop } from './components'
 import ScrollToTop from './utils/ScrollToTop'
+import { Analytics } from '@vercel/analytics/next';
 
 import './App.css'
 
@@ -29,6 +30,7 @@ function App() {
         </Switch>
       </Router>
       <BackToTop />
+      <Analytics />
     </div>
   );
 }
